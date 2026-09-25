@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Omar Call Tracker</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d1d1f; --muted:#6e6e73; --line:#e5e5ea; --link:#0a66c2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111113; --fg:#f2f2f4; --muted:#a1a1a6; --line:#2c2c30; --link:#6cb2ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:56px 20px; }
+  h1 { font-size:1.9rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  .muted { color:var(--muted); }
+  a { color:var(--link); }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); font-size:.9rem; color:var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Omar Call Tracker ("Omar Call Review" desktop app) · Last updated September 25, 2026</p>
+
+  <p>Omar Call Tracker is a private desktop application built for a single business to review its own sales calls. This policy explains what data the app accesses, how it is used, and how it is protected.</p>
+
+  <h2>Google user data the app accesses</h2>
+  <p>When you connect Google Drive, the app requests two permissions:</p>
+  <p><strong>Your Google account email address</strong>, used only to show which account is connected.</p>
+  <p><strong>Read-only access to Google Drive</strong>, used only to list and read call-transcript files (such as .vtt, .txt, .srt, and Google Docs) in the one folder you choose in the app's Settings. The app never creates, edits, moves, shares, or deletes anything in your Drive.</p>
+
+  <h2>How the data is used</h2>
+  <p>Transcript text is sent to Anthropic's Claude API, using the API key you provide, so the call can be analyzed and scored. The resulting analysis (for example the prospect's name and contact details mentioned on the call, call date and length, rubric scores, and notes) is saved to the app's private database so you can review your calls. Questions you ask in the app's chat feature, and the answers, are saved the same way.</p>
+  <p>The app's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the app's call-review features. It is never sold, never used for advertising, and never used to train general-purpose AI models.</p>
+
+  <h2>Where data is stored</h2>
+  <p>Your Google sign-in token and Claude API key are stored only on your own computer, encrypted with your operating system's secure storage. Call analyses and chat history are stored in a private Supabase database that only your signed-in account can access. Transcript files themselves stay in your Google Drive.</p>
+
+  <h2>Sharing</h2>
+  <p>Data is shared only with the services needed to run the app: Google (to read your chosen Drive folder), Anthropic (to analyze transcripts), and Supabase (to store results). It is not shared with anyone else.</p>
+
+  <h2>Deleting your data</h2>
+  <p>You can delete individual calls inside the app, and you can disconnect Google Drive at any time in the app's Settings or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. To have all stored data deleted, email the contact below.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:jaydentineo@gmail.com">jaydentineo@gmail.com</a></p>
+
+  <footer><a href="index.html">Home</a></footer>
+</main>
+</body>
+</html>
